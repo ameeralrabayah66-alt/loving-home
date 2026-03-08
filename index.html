@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوفينغ هومز | الرئيسية</title>
+    <link rel="stylesheet" href="css/external.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css0">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="search-action-section">
+            <a href="booking.html" style="text-decoration: none;">
+                <button class="btn-orange">احجز الان</button>
+            </a>                
+            <input type="text" placeholder="بحث" class="search-input">
+
+            </div>
+            
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">الصفحة الرئيسية</a></li>
+                    <li><a href="services.html">الخدمات</a></li>
+                    <li><a href="facilities.html">المرافق</a></li>
+                    <li><a href="packages.html">الحزم</a></li>
+                    <li><a href="booking.html">الحجوزات</a></li>
+                    <li><a href="contact us.html">اتصل بنا</a></li>
+                   <li><a href="about .html">نبذة بنا</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="logo-section">
+                <img src="logo.png" alt="Loving Home Dog Hotel" class="site-logo">
+            </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+            <div class="header-container">
+                <img src="image/dog.jpg" alt="وصف الصورة">
+            </div>
+
+        <section class="container info-cards">
+            <div class="grid-three">
+                <div class="card">
+                    <img src="image/dog shaved.jpg">
+                    <h3>الخدمات المقدمة</h3>
+                    <p>العناية بالمظهر، المتابعةالصحية، خدمة التوصيل</p>
+                </div>
+                <div class="card">
+                    <img src="image/dog swimming.jpg">
+                    <h3>المرافق المقدمة</h3>
+                    <p>صالة للحلاقة والمنتجع، مراكز حماية آمنة، خدمات طبية</p>
+                </div>
+                <div class="card">
+                    <img src="image/dog running.jpg">
+                    <h3>الحزم المقدمة</h3>
+                    <p>المميزة، الكلاسيكية، اليومية، اخرى</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container video-section">
+            <h2>فيديو توضيح</h2>
+            <div class="video-placeholder-box"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <section>
+                    <h4> التعليقات</h4>
+                    <textarea class="comment-textarea" placeholder="اكتب تعليقك هنا..."></textarea>
+                    <br>
+                    <button>إرسال</button>
+                    </section>
+            </div>
+            
+        <div class="rating-container">
+            <h4>التقييم</h4>
+            <div class="rating" id="rating">
+                <span onclick="setRating(1)">★</span>
+                <span onclick="setRating(2)">★</span>
+                <span onclick="setRating(3)">★</span>
+                <span onclick="setRating(4)">★</span>
+                <span onclick="setRating(5)">★</span>
+            </div>
+            </div>
+            <div class="footer-col">
+                <h4>وسائل التواصل الاجتماعي</h4>
+                <div class="social-icons"></div>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            <div class="footer-col">
+                <h4>معلومات الاتصال</h4>
+                <p>الصين، هونج كونج</p>
+                <p>ameeralrabayah66@gmail.com</p>
+                <p dir="ltr">2002014610@jolearn.jo</p>
+            </div>
+        </div>   
+ 
+    </footer>
+<script>
+function setRating(value) {
+    const stars = document.querySelectorAll('.rating span');
+    
+    // إزالة اللون من جميع النجوم أولاً
+    stars.forEach(star => star.classList.remove('star-gold'));
+    
+    // تلوين النجوم من 1 إلى الرقم الذي ضغط عليه المستخدم
+    for (let i = 0; i < value; i++) {
+        stars[i].classList.add('star-gold');
+    }
+}
+</script>
+</body>
+</html>
